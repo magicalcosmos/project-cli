@@ -1,0 +1,39 @@
+{
+  "name": "frontend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "start": "node --experimental-specifier-resolution=node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts ."
+  },
+  "bin": {
+    "cosmos": "lib/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/git-clone": "^0.2.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "commander": "^11.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "fs-extra": "^11.1.1",
+    "git-clone": "^0.2.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^9.2.8",
+    "ora": "^6.3.1",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
